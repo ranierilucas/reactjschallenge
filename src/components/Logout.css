@@ -1,0 +1,35 @@
+#logoutAll{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    color: #FFFFFF;
+    background-color: #1F1F1F;
+    width: 100%;
+    height: 40px;
+    z-index: 2;
+    top: 0px;
+    position: absolute;
+    font-family: Helvetica;
+}
+#logoutAll > div{
+    width: 100%;
+}
+#logoutExit{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    float: right;
+    width: 80px;
+}
+#logoutLogin{
+    margin-left: 10px;
+    float: left;
+    width: 100px;
+}
+#logoutExit > i{
+    color: #D03434;
+    zoom: 150%;
+    margin-left: 5px;
+}

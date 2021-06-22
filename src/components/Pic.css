@@ -1,0 +1,27 @@
+#picAll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#picBackground{
+    position: absolute;
+    top: 0px;
+    height: 110px;
+    width: 100%;
+    background-color: #1F1F1F;
+    z-index: 1;
+}
+#picPhoto{
+    position: absolute;
+    height: 115px;
+    width: 115px;
+    top: 55px;
+    z-index: 2;
+}
+#picPhoto > img{
+    border-radius: 100%;
+    border: 3px solid #FFF;
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove espaço extra embaixo da imagem */
+}

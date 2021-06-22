@@ -1,0 +1,36 @@
+#loginAll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50%;
+}
+#logoPrincipal > i{
+    zoom: 500%;
+    color:#FFCE00;
+}
+#txtInput{
+    vertical-align: middle;
+
+    margin-top: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    resize: none;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    
+    width: 200px;
+    height: 30px;
+}
+#txtInput:focus{
+    margin: none;
+}
+#btnSearch{
+    background-color: #FFCE00;
+    border:none;
+    border-radius: 8px;
+    
+    width: 200px;
+    height: 30px;
+}
