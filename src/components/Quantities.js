@@ -1,7 +1,12 @@
 import React from 'react';
 import './Quantities.css';
+import { useLocation } from 'react-router-dom';
 
-function Quantities({ location: location }) {
+
+// function Quantities({ location: location }) {
+function Quantities() {
+    const location = useLocation(); //Onde os dados estão
+
 
     return (
         <>

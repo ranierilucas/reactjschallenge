@@ -1,0 +1,80 @@
+#repoAll{
+    color: rgb(235, 235, 235);
+    font-family: Helvetica;
+    z-index: 2;
+
+    margin-bottom: 50px;
+}
+#repoAll > hr{
+    margin-top: 40px;
+    border: none;
+    height: 1px;
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+#repoName{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+    height: 42px;
+}
+#repoName > span{
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+#repoYellow{
+    width: 10px;
+    height: 100%;
+    background-color: #FFCE00;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#repoMore{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: lighter;
+    color: silver;
+}
+#repoIcons {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+
+}
+#repoIcons > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#repoIcons > div > span{
+    color:silver;
+    font-size: 12px;
+}
+.fa-star{
+    margin-left: 20px;
+    margin-right: 5px;
+    color:#FFCE00 ;
+}
+#repoSymbols{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+#repoLocked{
+    margin-right: 30px;
+    margin-left:  20px;
+    zoom: 120%;
+    color: rgb(168, 23, 23);
+}
+#repoUnlocked{
+    zoom: 120%;
+    color: rgb(36, 190, 57);
+}

@@ -1,8 +1,10 @@
 import React from 'react';
 import './Info.css';
+import { useLocation } from 'react-router-dom';
 
-function Info({ location: location }) {
-    // console.log('Info veio!');
+// function Info({ location: location }) {
+function Info() {
+    const location = useLocation(); //Onde os dados estão
 
     return (
         <>

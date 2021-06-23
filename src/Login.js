@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Login.css';
-// import BaseUser from './BaseUser';
-import { BrowserRouter as Router } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
 
 function Login({ isAuth: isAuth }) {
     const history = useHistory();
+    // let emptyMessage = "Campo obrigatório";
+    const [emptyMessage, setemptyMessage] = useState("");
     // console.log('valor no Login é:', isAuth);
 
     function requestUserData() {
@@ -32,6 +32,15 @@ function Login({ isAuth: isAuth }) {
         xhr.send();
     }
 
+    function checkEpty() {
+        const username = document.querySelector('#txtInput').value;
+        if (username == "") {
+            setemptyMessage("Campo obrigatório");
+        } else {
+            setemptyMessage("");
+        }
+    }
+
     return (
         <>
             {/* Testando para ver se routing a partir daqui funciona p/ limitar ele apenas com login */}
@@ -42,8 +51,15 @@ function Login({ isAuth: isAuth }) {
                 <div id='logoPrincipal'>
                     <i class="fa fa-github"></i>
                 </div>
-                <textarea id='txtInput' placeholder="Usuário"></textarea>
-                <button onClick={requestUserData} id="btnSearch"><i class="fa fa-arrow-right"></i>Entrar</button>
+                <div id="inputContainer">
+                    <input id='txtInput' placeholder="Usuário" onChange={checkEpty}>
+                    </input>
+                    <span>{emptyMessage}</span>
+                </div>
+                <button onClick={requestUserData} id="btnSearch">
+                    <span>Entrar</span>
+                    <i class="fa fa-arrow-right"></i>
+                </button>
             </div>
         </>
     );
