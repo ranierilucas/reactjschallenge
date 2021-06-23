@@ -4,7 +4,6 @@ import { useHistory } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
 
-// function Logout({ location: location }) {
 function Logout() {
     const history = useHistory();
     const location = useLocation(); //Onde os dados estão

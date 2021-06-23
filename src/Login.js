@@ -4,9 +4,7 @@ import { useHistory } from 'react-router-dom';
 
 function Login({ isAuth: isAuth }) {
     const history = useHistory();
-    // let emptyMessage = "Campo obrigatório";
     const [emptyMessage, setemptyMessage] = useState("");
-    // console.log('valor no Login é:', isAuth);
 
     function requestUserData() {
         const username = document.querySelector('#txtInput').value;
@@ -21,10 +19,8 @@ function Login({ isAuth: isAuth }) {
                 console.log('consegui!');
 
                 isAuth(true);
-                // history.push('/user');
                 history.push({
                     pathname: '/user',
-                    // search: '?query=abc',
                     state: { detail: data }
                 });
             }
@@ -43,10 +39,6 @@ function Login({ isAuth: isAuth }) {
 
     return (
         <>
-            {/* Testando para ver se routing a partir daqui funciona p/ limitar ele apenas com login */}
-            {/* <Router>
-                <Route path="/info" exact component={BaseUser} />
-            </Router> */}
             <div id="loginAll">
                 <div id='logoPrincipal'>
                     <i class="fa fa-github"></i>

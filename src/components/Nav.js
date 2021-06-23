@@ -1,9 +1,8 @@
 import React from 'react';
 import './Nav.css';
-import { useHistory, Redirect } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
-// function Nav({ location: location }) {
 function Nav() {
     const location = useLocation(); //Onde os dados estão
     const history = useHistory();

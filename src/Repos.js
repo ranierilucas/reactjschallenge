@@ -39,7 +39,7 @@ function Repos() {
     return (
         <>
             <div id="reposAll">
-                <h1> Repos do rapaz </h1>
+                <h1> Repositórios </h1>
                 {data.map(info => <Repository name={info.name} description={info.description} stargazers={info.stargazers_count} />)}
                 <Nav location={location.state.detail} />
             </div>

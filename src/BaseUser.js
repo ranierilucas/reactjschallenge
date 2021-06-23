@@ -11,8 +11,6 @@ import { useLocation } from 'react-router-dom';
 
 function BaseUser() {
   const location = useLocation(); //Onde os dados estão
-  // console.log('Data is:')
-  // console.log(location.state.detail);
 
   return (
     <>

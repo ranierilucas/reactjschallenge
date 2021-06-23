@@ -17,10 +17,8 @@ function App() {
         <Login {...props} isAuth={setIsAuth} />
       )}
       />
-      {/* <Route path="/user" exact component={BaseUser} /> */}
       <ProtectedRoute path="/user" component={BaseUser} isAuth={isAuth} />
       <ProtectedRoute path="/repos" component={Repos} isAuth={isAuth} />
-      {/* <Route path="/bio" exact component={Bio} /> */}
 
     </Router>
   );

@@ -3,7 +3,6 @@ import './Pic.css';
 import { useLocation } from 'react-router-dom';
 
 
-// function Pic({ location: location }) {
 function Pic() {
     const location = useLocation(); //Onde os dados estão
 

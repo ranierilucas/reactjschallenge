@@ -2,7 +2,6 @@ import React from 'react';
 import './Bio.css';
 import { useLocation } from 'react-router-dom';
 
-// function Bio({ location: location }) {
 function Bio() {
     const location = useLocation(); //Onde os dados estão
 
